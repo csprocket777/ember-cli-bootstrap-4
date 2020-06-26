@@ -1,10 +1,10 @@
 {
-  "name": "ember-cli-bootstrap-4",
-  "version": "0.12.0",
-  "description": "An ember-cli addon for using Bootstrap 4 in Ember applications.",
+  "name": "ember-cli-bootstrap-5",
+  "version": "0.12.1",
+  "description": "An ember-cli addon for using Bootstrap 5 in Ember applications.",
   "keywords": [
     "bootstrap",
-    "bootstrap-4",
+    "bootstrap-5",
     "framework",
     "css",
     "scss",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:kaermorchen/ember-cli-bootstrap-4.git"
+    "url": "git@github.com:csprocket777/ember-cli-bootstrap-5.git"
   },
   "license": "MIT",
   "author": {
@@ -26,7 +26,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "homepage": "https://github.com/kaermorchen/ember-cli-bootstrap-4",
+  "homepage": "",
   "scripts": {
     "build": "ember build",
     "deploy": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push; git checkout -",
@@ -37,7 +37,7 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^5.0.0-alpha1",
     "broccoli-funnel": "^2.0.2",
     "broccoli-merge-trees": "^3.0.2",
     "ember-cli-babel": "^7.11.1",
@@ -49,7 +49,6 @@
     "sass": "^1.23.3"
   },
   "devDependencies": {
-    "@ember/jquery": "^0.6.1",
     "@ember/optional-features": "^1.0.0",
     "babel-eslint": "^10.0.3",
     "broccoli-asset-rev": "^3.0.0",
@@ -81,7 +80,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "defaultBlueprint": "ember-cli-bootstrap-4",
-    "demoURL": "https://kaermorchen.github.io/ember-cli-bootstrap-4/"
+    "defaultBlueprint": "ember-cli-bootstrap-5"
   }
 }

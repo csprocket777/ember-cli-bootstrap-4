@@ -6,11 +6,11 @@ const fs = require('fs');
 
 module.exports = {
   normalizeEntityName(entityName) {
-    return entityName || "ember-cli-bootstrap-4";
+    return entityName || "ember-cli-bootstrap-5";
   },
 
   afterInstall() {
-    const importStatement = '\n@import "ember-cli-bootstrap-4/bootstrap";\n';
+    const importStatement = '\n@import "ember-cli-bootstrap-5/bootstrap";\n';
     const stylePath = path.join('app', 'styles');
     const file = path.join(stylePath, `app.scss`);
 
@@ -27,7 +27,7 @@ module.exports = {
     }
 
     return this.addPackagesToProject([
-      { name: 'bootstrap', target: '^4.4.1' },
+      { name: 'bootstrap', target: '^5.0.0-alpha1' },
       { name: 'popper.js', target: '^1.16.0' },
       { name: 'ember-cli-sass', target: '^10.0.0' },
       { name: 'sass', target: '^1.23.0' },
