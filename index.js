@@ -46,7 +46,7 @@ module.exports = {
       destDir: this.name
     }));
 
-    return mergeTrees([popperJs, bootstrapJs]);
+    return mergeTrees([bootstrapJs]);
   },
 
   treeForStyles(tree) {
