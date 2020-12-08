@@ -22,10 +22,10 @@ module.exports = {
     if (Array.isArray(options.js)) {
       let host = this._findHost();
 
-      host.import({
-        development: path.join(vendorPath, 'popper.js'),
-        production: path.join(vendorPath, 'popper.min.js'),
-      });
+//       host.import({
+//         development: path.join(vendorPath, 'popper.js'),
+//         production: path.join(vendorPath, 'popper.min.js'),
+//       });
 
       options.js.forEach(function (file) {
         host.import(path.join(vendorPath, `${file}.js`));
@@ -34,11 +34,11 @@ module.exports = {
   },
 
   treeForVendor() {
-    let popperPath = path.join(this.resolvePackagePath('popper.js'), 'dist', 'umd');
-    let popperJs = fastbootTransform(new Funnel(popperPath, {
-      files: ['popper.js', 'popper.min.js'],
-      destDir: this.name
-    }));
+//     let popperPath = path.join(this.resolvePackagePath('popper.js'), 'dist', 'umd');
+//     let popperJs = fastbootTransform(new Funnel(popperPath, {
+//       files: ['popper.js', 'popper.min.js'],
+//       destDir: this.name
+//     }));
 
     let bootstrapPath = path.join(this.resolvePackagePath('bootstrap'), 'js', 'dist');
     let bootstrapJs = fastbootTransform(new Funnel(bootstrapPath, {
