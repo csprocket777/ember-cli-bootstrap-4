@@ -27,11 +27,6 @@ module.exports = {
         production: path.join(vendorPath, 'popper.min.js'),
       });
 
-      host.import({
-        development: path.join(vendorPath, 'popper-utils.js'),
-        production: path.join(vendorPath, 'popper-utils.min.js'),
-      });
-
       options.js.forEach(function (file) {
         host.import(path.join(vendorPath, `${file}.js`));
       });
@@ -41,7 +36,7 @@ module.exports = {
   treeForVendor() {
     let popperPath = path.join(this.resolvePackagePath('popper.js'), 'dist', 'umd');
     let popperJs = fastbootTransform(new Funnel(popperPath, {
-      files: ['popper.js', 'popper.min.js', 'popper-utils.js', 'popper-utils.min.js'],
+      files: ['popper.js', 'popper.min.js'],
       destDir: this.name
     }));
 
