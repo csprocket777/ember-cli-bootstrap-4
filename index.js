@@ -6,7 +6,7 @@ const mergeTrees = require('broccoli-merge-trees');
 const fastbootTransform = require('fastboot-transform');
 const resolve = require('resolve');
 const defaultOptions = {
-  js: ['dom/data', 'dom/event-handler', 'dom/manipulator', 'dom/selector-engine', 'alert', 'button', 'carousel', 'collapse', 'dropdown', 'modal', 'tooltip', 'popover', 'scrollspy', 'tab', 'toast']
+  js: ['dom/data', 'dom/event-handler', 'dom/manipulator', 'dom/selector-engine', 'base-component', 'alert', 'button', 'carousel', 'collapse', 'dropdown', 'modal', 'tooltip', 'popover', 'scrollspy', 'tab', 'toast']
 };
 
 module.exports = {
